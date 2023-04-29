@@ -1,33 +1,66 @@
 .gallery {
-    margin-top: 10%;
-    margin-bottom: 3%;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .row {
-    margin-top: 2%;
-    margin-bottom: 2%;
-    background-color: #e6f4ff;
-    padding-top: 2%;
-    padding-bottom: 2%;
-  }
-  
-  .portrait-gallery {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-
-  .input-row {
-    margin-bottom: 10pt
+  margin-top: 1%;
+  margin-bottom: 1%;
+  display: flex;
+  flex-direction: column;
 }
 
-  .my-form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .portrait-gallery > img {
-    border-radius: 25px;
-  }
+.row {
+  margin-top: 1%;
+  margin-bottom: 2%;
+  background-color: #e6dfda;
+  padding-top: 1%;
+  padding-bottom: 2%;
+}
+
+.portrait-gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.input-row {
+  margin-bottom: 10pt
+}
+
+.my-form {
+  display: flex;
+  flex-direction: column;
+  color: #524340;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+}
+
+.button {
+  color: #f29b27;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+}
+
+.portrait-gallery>img {
+  border-radius: 25px;
+}
+
+h2 {
+  color: #f29b27;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+}
+
+p {
+  color: #524340;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+}
+
+/* .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f1eae4;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 88pt;
+} */
