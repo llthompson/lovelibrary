@@ -15,7 +15,7 @@
 
 .portrait-gallery {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
@@ -30,6 +30,7 @@
   color: #524340;
   font-family: 'Quicksand', sans-serif;
   font-weight: 300;
+  text-align: center;
 }
 
 .button {
@@ -46,12 +47,14 @@ h2 {
   color: #f29b27;
   font-family: 'Quicksand', sans-serif;
   font-weight: 300;
+  text-align: center;
 }
 
 p {
   color: #524340;
   font-family: 'Quicksand', sans-serif;
   font-weight: 300;
+  text-align: center;
 }
 
 .centered {
@@ -68,4 +71,37 @@ p {
 .container {
   position: relative;
   text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .centered {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f1eae4;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 48pt;
+  }
+}
+
+@media (max-width: 700px) {
+  .portrait-gallery {
+    flex-direction: column;
+    align-content: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .centered {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f1eae4;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 24pt;
+  }
 }
