@@ -1,9 +1,3 @@
-// fetch(`https://www.googleapis.com/books/v1/volumes?q=search-terms&key=your-API-key)
-//   .then(response => response.json())
-//   .then(result => {
-// this.setState({ books: result.items})
-// })}
-
 // search book semiosis
 
 const button = document.getElementById('btn');
@@ -14,10 +8,8 @@ let arrayOfBooks = [];
 
 
 button.addEventListener('click', async () => {
-
     let search = input.value;
     await fetchBooks(search);
-
 })
 
 
@@ -47,6 +39,7 @@ const createImage = (book) => {
     const img = document.createElement('img');
     img.className = 'activator';
     img.src = book.volumeInfo.imageLinks.thumbnail;
+
     cardImage.appendChild(img);
     cardImage.className = 'card-image waves-effect waves-block waves-light';
     return cardImage;
@@ -58,10 +51,6 @@ const createContent = (book) => {
 
     const span = document.createElement('span');
     span.className = 'card-title activator grey-text text-darken-4';
-    // const icon = document.createElement('i')
-    // icon.className = 'material-icons right';
-    // icon.innerText = 'expand_more';
-    // span.appendChild(icon);
 
     const p = document.createElement('p');
     p.className = 'titleP'
@@ -83,10 +72,6 @@ const createAuthor = (book) => {
 
     const span = document.createElement('span');
     span.className = 'card-title activator grey-text text-darken-4';
-    // const icon = document.createElement('i')
-    // icon.className = 'material-icons right';
-    // icon.innerText = 'expand_more';
-    // span.appendChild(icon);
 
     const p = document.createElement('p');
     p.className = 'authorP'
@@ -159,13 +144,11 @@ const createReveal = (book) => {
 
 const createCard = (book) => {
 
-
     //create the card
     const card = document.createElement('div');
     card.className = 'card';
 
     //name the stuff on the card
-
     const cardImage = createImage(book);
     const cardContent = createContent(book);
     const cardAuthor = createAuthor(book);
@@ -173,12 +156,13 @@ const createCard = (book) => {
     const cardPublisher = createPublisher(book);
 
     //put the stuff on the card
-
     card.appendChild(cardImage);
     card.appendChild(cardContent);
     card.appendChild(cardAuthor);
     card.appendChild(cardPublisher);
     card.appendChild(cardReveal);
+
+    //finish
     return card
 }
 
