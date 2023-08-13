@@ -64,6 +64,7 @@ const createContent = (book) => {
     span.appendChild(icon);
 
     const p = document.createElement('p');
+    p.className = 'titleP'
     const a = document.createElement('a');
     a.href = book.volumeInfo.infoLink;
     a.innerText = book.volumeInfo.title;
@@ -76,20 +77,23 @@ const createContent = (book) => {
     return cardContent;
 }
 
+// create author, publisher, genre
+
+
 const createReveal = (book) => {
     const cardReveal = document.createElement('div');
     cardReveal.className = 'card-reveal'
 
     const span = document.createElement('span');
     span.className = 'card-title grey-text text-darken-4';
+    const icon = document.createElement('i')
+    icon.className = 'material-icons right';
+    icon.innerText = 'expand_more';
+    span.appendChild(icon);
 
     const p = document.createElement('p');
+    p.className = 'summaryP';
     p.innerHTML = book.volumeInfo.description;
-
-    // const a = document.createElement('a');
-    // a.href = book.selfLink;
-    // a.innerText = book.volumeInfo.title;
-    // p.appendChild(a);
 
     cardReveal.appendChild(span);
     cardReveal.appendChild(p);
