@@ -58,16 +58,16 @@ const createContent = (book) => {
 
     const span = document.createElement('span');
     span.className = 'card-title activator grey-text text-darken-4';
-    const icon = document.createElement('i')
-    icon.className = 'material-icons right';
-    icon.innerText = 'expand_more';
-    span.appendChild(icon);
+    // const icon = document.createElement('i')
+    // icon.className = 'material-icons right';
+    // icon.innerText = 'expand_more';
+    // span.appendChild(icon);
 
     const p = document.createElement('p');
     p.className = 'titleP'
     const a = document.createElement('a');
     a.href = book.volumeInfo.infoLink;
-    a.innerText = book.volumeInfo.title;
+    a.innerText = `Title | ${book.volumeInfo.title}`;
     p.appendChild(a);
 
     cardContent.appendChild(span);
@@ -75,6 +75,56 @@ const createContent = (book) => {
 
     console.log('a title and link', cardContent);
     return cardContent;
+}
+
+const createAuthor = (book) => {
+    const cardAuthor = document.createElement('div');
+    cardAuthor.className = 'card-content';
+
+    const span = document.createElement('span');
+    span.className = 'card-title activator grey-text text-darken-4';
+    const icon = document.createElement('i')
+    icon.className = 'material-icons right';
+    icon.innerText = 'expand_more';
+    span.appendChild(icon);
+
+    const p = document.createElement('p');
+    p.className = 'authorP'
+    const a = document.createElement('a');
+    a.href = book.volumeInfo.infoLink;
+    a.innerText = `Author | ${book.volumeInfo.authors}`;
+    p.appendChild(a);
+
+    cardAuthor.appendChild(span);
+    cardAuthor.appendChild(p);
+
+    console.log('author', cardAuthor);
+    return cardAuthor;
+}
+
+const createPublisher = (book) => {
+    const cardAuthor = document.createElement('div');
+    cardAuthor.className = 'card-content';
+
+    const span = document.createElement('span');
+    span.className = 'card-title activator grey-text text-darken-4';
+    const icon = document.createElement('i')
+    icon.className = 'material-icons right';
+    icon.innerText = 'expand_more';
+    span.appendChild(icon);
+
+    const p = document.createElement('p');
+    p.className = 'authorP'
+    const a = document.createElement('a');
+    a.href = book.volumeInfo.infoLink;
+    a.innerText = `Author | ${book.volumeInfo.authors}`;
+    p.appendChild(a);
+
+    cardAuthor.appendChild(span);
+    cardAuthor.appendChild(p);
+
+    console.log('author', cardAuthor);
+    return cardAuthor;
 }
 
 // create author, publisher, genre
@@ -119,13 +169,15 @@ const createCard = (book) => {
 
     const cardImage = createImage(book);
     const cardContent = createContent(book);
+    const cardAuthor = createAuthor(book);
     const cardReveal = createReveal(book);
 
 
     //put the stuff on the card
 
-    card.appendChild(cardImage)
+    card.appendChild(cardImage);
     card.appendChild(cardContent);
+    card.appendChild(cardAuthor);
     card.appendChild(cardReveal);
     return card
 }
