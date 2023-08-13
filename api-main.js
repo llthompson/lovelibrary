@@ -93,10 +93,10 @@ const createPublisher = (book) => {
 
     const span = document.createElement('span');
     span.className = 'card-title activator grey-text text-darken-4';
-    const icon = document.createElement('i')
-    icon.className = 'material-icons right';
-    icon.innerText = 'expand_more';
-    span.appendChild(icon);
+    // const icon = document.createElement('i')
+    // icon.className = 'material-icons right';
+    // icon.innerText = 'expand_more';
+    // span.appendChild(icon);
 
     const p = document.createElement('p');
     p.className = 'publisherP'
@@ -114,6 +114,18 @@ const createPublisher = (book) => {
 
 // create author, publisher, genre
 
+const createToggle = (cardReveal) => {
+    const icon = document.createElement('i')
+    icon.className = 'material-icons toggle-icon';
+    icon.innerText = 'local_library';
+    icon.addEventListener('click', () => {
+        cardReveal.classList.toggle('revealed');
+    });
+    // const span = document.createElement('span');
+    // span.className = 'card-title grey-text text-darken-4';
+    // span.appendChild(icon);
+    return icon;
+}
 
 const createReveal = (book) => {
     const cardReveal = document.createElement('div');
@@ -122,20 +134,26 @@ const createReveal = (book) => {
     const sumHeader = document.createElement('h3');
     sumHeader.innerText = 'Summary';
 
-    const span = document.createElement('span');
-    span.className = 'card-title grey-text text-darken-4';
-    const icon = document.createElement('i')
-    icon.className = 'material-icons right';
-    icon.innerText = 'expand_less';
-    span.appendChild(icon);
+    // const icon = document.createElement('i')
+    // icon.className = 'material-icons center';
+    // icon.innerText = 'ac_unit';
+    // const span = document.createElement('span');
+    // span.className = 'card-title grey-text text-darken-4';
+    // span.appendChild(icon);
+    
+    // const icon = document.createElement('i')
+    // icon.className = 'material-icons right';
+    // icon.innerText = 'expand_less';
+    // span.appendChild(icon);
 
     const p = document.createElement('p');
     p.className = 'summaryP';
     p.innerHTML = book.volumeInfo.description;
 
     cardReveal.appendChild(sumHeader);
-    cardReveal.appendChild(span);
     cardReveal.appendChild(p);
+    // cardReveal.appendChild(span);
+
 
 
     console.log('summary??', cardReveal);
@@ -152,15 +170,21 @@ const createCard = (book) => {
     const cardImage = createImage(book);
     const cardContent = createContent(book);
     const cardAuthor = createAuthor(book);
-    const cardReveal = createReveal(book);
     const cardPublisher = createPublisher(book);
+
+    const cardReveal = createReveal(book);
+    const cardToggle = createToggle(cardReveal);
+
 
     //put the stuff on the card
     card.appendChild(cardImage);
     card.appendChild(cardContent);
     card.appendChild(cardAuthor);
     card.appendChild(cardPublisher);
+    card.appendChild(cardToggle);
+
     card.appendChild(cardReveal);
+
 
     //finish
     return card
