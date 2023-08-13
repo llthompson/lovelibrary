@@ -66,6 +66,8 @@ p {
   font-family: 'Quicksand', sans-serif;
   font-weight: 700;
   font-size: 88pt;
+  text-decoration: wavy;
+  text-shadow: 2px 2px 1px #ffffff33;
 }
 
 .container {

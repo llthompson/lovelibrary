@@ -1,0 +1,171 @@
+{
+    "kind": "books#volume",
+    "id": "kLAoswEACAAJ",
+    "etag": "T9K10+XECoc",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/kLAoswEACAAJ",
+    "volumeInfo": {
+        "title": "Harry Potter and the Cursed Child",
+        "subtitle": "Parts One and Two Playscript",
+        "authors": [
+            "J. K. Rowling",
+            "Jack Thorne",
+            "John Tiffany"
+        ],
+        "publishedDate": "2017",
+        "description": "As an overworked employee of the Ministry of Magic, a husband, and a father, Harry Potter struggles with a past that refuses to stay where it belongs while his youngest son, Albus, finds the weight of the family legacy difficult to bear.",
+        "industryIdentifiers": [
+            {
+                "type": "ISBN_10",
+                "identifier": "0751565369"
+            },
+            {
+                "type": "ISBN_13",
+                "identifier": "9780751565362"
+            }
+        ],
+        "readingModes": {
+            "text": false,
+            "image": false
+        },
+        "pageCount": 0,
+        "printType": "BOOK",
+        "categories": [
+            "Fiction"
+        ],
+        "averageRating": 3.5,
+        "ratingsCount": 1447,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+        },
+        "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=kLAoswEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=kLAoswEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=kLAoswEACAAJ&dq=harry+potter&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=kLAoswEACAAJ&dq=harry+potter&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Harry_Potter_and_the_Cursed_Child.html?hl=&id=kLAoswEACAAJ"
+    },
+    "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+    },
+    "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+            "isAvailable": false
+        },
+        "pdf": {
+            "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=kLAoswEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+        "textSnippet": "As an overworked employee of the Ministry of Magic, a husband, and a father, Harry Potter struggles with a past that refuses to stay where it belongs while his youngest son, Albus, finds the weight of the family legacy difficult to bear."
+    }
+}
+
+
+// FOR THE LONG WAY TO A SMALL ANGRY PLANET
+
+
+{
+    "kind": "books#volume",
+    "id": "dgFxCQAAQBAJ",
+    "etag": "BgR2z7bYERo",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/dgFxCQAAQBAJ",
+    "volumeInfo": {
+      "title": "The Long Way to a Small, Angry Planet",
+      "subtitle": "Wayfarers 1",
+      "authors": [
+        "Becky Chambers"
+      ],
+      "publisher": "Hodder & Stoughton",
+      "publishedDate": "2015-03-16",
+      "description": "\u003cp\u003e\u003cb\u003eLONGLISTED FOR THE BAILEY'S \u003c/b\u003e\u003cb\u003eWOMEN'S PRIZE FOR FICTION \u003c/b\u003e\u003cbr\u003e\u003cbr\u003e\u003ci\u003e 'A quietly profound, humane tour de force' Guardian \u003c/i\u003e\u003cbr\u003e\u003cbr\u003e\u003cb\u003eThe beloved debut novel that will restore your faith in humanity\u003c/b\u003e\u003cbr\u003e\u003cb\u003e\u003cbr\u003e#SmallAngryPlanet\u003c/b\u003e\u003cbr\u003e\u003cbr\u003eWhen Rosemary Harper joins the crew of the \u003ci\u003eWayfarer\u003c/i\u003e, she isn't expecting much. The ship, which has seen better days, offers her everything she could possibly want: a small, quiet spot to call home for a while, adventure in far-off corners of the galaxy, and distance from her troubled past.\u003cbr\u003e\u003cbr\u003eBut Rosemary gets more than she bargained for with the \u003ci\u003eWayfarer\u003c/i\u003e. The crew is a mishmash of species and personalities, from Sissix, the friendly reptillian pilot, to Kizzy and Jenks, the constantly sparring engineers who keep the ship running. Life on board is chaotic, but more or less peaceful - exactly what Rosemary wants.\u003cbr\u003e\u003cbr\u003eUntil the crew are offered the job of a lifetime: the chance to build a hyperspace tunnel to a distant planet. They'll earn enough money to live comfortably for years... if they survive the long trip through war-torn interstellar space without endangering any of the fragile alliances that keep the galaxy peaceful.\u003cbr\u003e\u003cbr\u003eBut Rosemary isn't the only person on board with secrets to hide, and the crew will soon discover that space may be vast, but spaceships are very small indeed.\u003cbr\u003e\u003cbr\u003e\u003cb\u003e\u003c/b\u003e\u003cb\u003e PRAISE FOR THE WAYFARERS\u003c/b\u003e\u003cbr\u003e\u003cb\u003e\u003cbr\u003e'Never less than deeply involving\u003ci\u003e' \u003c/i\u003e\u003c/b\u003eDAILY MAIL\u003cbr\u003e\u003cbr\u003e'Explores the quieter side of sci-fi while still wowing us with daring leaps of imagination' iBOOKS\u003cbr\u003e\u003cbr\u003e\u003cb\u003e'So much fun to read' \u003c/b\u003eHEAT\u003cbr\u003e\u003cbr\u003e'Chambers is simply an exceptional talent, quietly and beautifully redefining the space opera' TOR.COM\u003cbr\u003e\u003cbr\u003e\u003cb\u003e'The most fun that I've had with a novel in a long, long time' \u003c/b\u003eiO9\u003c/p\u003e",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_10",
+          "identifier": "1473619777"
+        },
+        {
+          "type": "ISBN_13",
+          "identifier": "9781473619777"
+        }
+      ],
+      "readingModes": {
+        "text": true,
+        "image": false
+      },
+      "pageCount": 608,
+      "printedPageCount": 405,
+      "printType": "BOOK",
+      "categories": [
+        "Fiction / Science Fiction / Action & Adventure",
+        "Fiction / Science Fiction / Space Opera",
+        "Fiction / Science Fiction / General"
+      ],
+      "averageRating": 4,
+      "ratingsCount": 125,
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": true,
+      "contentVersion": "1.16.15.0.preview.2",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/publisher/content?id=dgFxCQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE710rWhXFfkkG6NtGlbH9U2tbQBCe5A6_0tHgdcK22J7KPsTB3Iil7gIG-7reMMwlFNSIvj3Q6_--uU8u_oxUSTMUdm6Jc408_JQp3gM7v1R-IfYC9iCrNkhsIPMK1-tGJM5vpfX&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/publisher/content?id=dgFxCQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE70kqDc8uS0P79qMh9J1WbZxGU4evpKqOTr9zC5ZF2q58BPeo9H8iwqI-vAltZfu5MfDjRcBusUwMa5RYRN3oCCkpQWHb4lxnzoOCR-W96JOizrHoF-slvsGsRhu6Kd6ohZAsOHZ&source=gbs_api",
+        "small": "http://books.google.com/books/publisher/content?id=dgFxCQAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE73qTml98k9NHIPCiwz-_OVOBaZmWIU_r9SaPYSpY1QHVbWiO8yEJcqhsszQHEJWyHmHalf6ZMNzWMg0h8zkkHlKq0EyqptQtJaPesGBCsa4iHxgs_mN1JaniLKeJ9_AGsbXnx-L&source=gbs_api",
+        "medium": "http://books.google.com/books/publisher/content?id=dgFxCQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71t7ba9-mpfIJXuIVlwhu-bapWPbtlwzGtFIWLvwYUe2TlreUn1uoTu4dGsppeOMLGeXOr_FBMJesN4Mien7JlYr77K9XQnL1kDpY0LDJ-tcFtFDqsmJtVIWJId-THD9rx0ZMlw&source=gbs_api",
+        "large": "http://books.google.com/books/publisher/content?id=dgFxCQAAQBAJ&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE72JX9EZXUusHC8Jvj5zVP56RQw2pv0rgDEFkJcbk1B1Mi1s1pX2j7hwS5OP3FoZzYDp_KmPlhSzr-RSdknd0MlLhKySaahcCjOTYJPqTJNcPDuh_947OwUrVeMoUO4hcvFMC_Jp&source=gbs_api",
+        "extraLarge": "http://books.google.com/books/publisher/content?id=dgFxCQAAQBAJ&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE70q9WCrmFMIpmY7k-ZeKFmKQTplg4TAPiMS8B2HAJkCCHwmvEcqhUREmo5hPpux4R2-H1szYy5aZamWuALnJVxt1PJlTRt4WeU5iuR-wPTH05S4ONRn-x9PV2sZBfrDG6NDaQHD&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com/books?id=dgFxCQAAQBAJ&hl=&source=gbs_api",
+      "infoLink": "https://play.google.com/store/books/details?id=dgFxCQAAQBAJ&source=gbs_api",
+      "canonicalVolumeLink": "https://play.google.com/store/books/details?id=dgFxCQAAQBAJ"
+    },
+    "layerInfo": {
+      "layers": [
+        {
+          "layerId": "geo",
+          "volumeAnnotationsVersion": "17"
+        }
+      ]
+    },
+    "saleInfo": {
+      "country": "US",
+      "saleability": "NOT_FOR_SALE",
+      "isEbook": false
+    },
+    "accessInfo": {
+      "country": "US",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": true,
+        "acsTokenLink": "http://books.google.com/books/download/The_Long_Way_to_a_Small_Angry_Planet-sample-epub.acsm?id=dgFxCQAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+      },
+      "pdf": {
+        "isAvailable": false
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=dgFxCQAAQBAJ&hl=&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    }
+  }
