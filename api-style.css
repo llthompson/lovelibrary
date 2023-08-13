@@ -64,13 +64,19 @@ h2 {
 p {
     white-space: pre-wrap;
     overflow: visible;
+    text-align: left;
 }
+
 .titleP {
     padding-left: 35%;
 }
 
 .authorP {
-    padding-left: 31%;
+    padding-left: 35%;
+}
+
+.publisherP {
+    padding-left: 35%;
 }
 
 .material-icons {

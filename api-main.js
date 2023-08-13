@@ -83,10 +83,10 @@ const createAuthor = (book) => {
 
     const span = document.createElement('span');
     span.className = 'card-title activator grey-text text-darken-4';
-    const icon = document.createElement('i')
-    icon.className = 'material-icons right';
-    icon.innerText = 'expand_more';
-    span.appendChild(icon);
+    // const icon = document.createElement('i')
+    // icon.className = 'material-icons right';
+    // icon.innerText = 'expand_more';
+    // span.appendChild(icon);
 
     const p = document.createElement('p');
     p.className = 'authorP'
@@ -103,8 +103,8 @@ const createAuthor = (book) => {
 }
 
 const createPublisher = (book) => {
-    const cardAuthor = document.createElement('div');
-    cardAuthor.className = 'card-content';
+    const cardPublisher = document.createElement('div');
+    cardPublisher.className = 'card-content';
 
     const span = document.createElement('span');
     span.className = 'card-title activator grey-text text-darken-4';
@@ -114,17 +114,17 @@ const createPublisher = (book) => {
     span.appendChild(icon);
 
     const p = document.createElement('p');
-    p.className = 'authorP'
+    p.className = 'publisherP'
     const a = document.createElement('a');
     a.href = book.volumeInfo.infoLink;
-    a.innerText = `Author | ${book.volumeInfo.authors}`;
+    a.innerText = `Publisher | ${book.volumeInfo.publisher}`;
     p.appendChild(a);
 
-    cardAuthor.appendChild(span);
-    cardAuthor.appendChild(p);
+    cardPublisher.appendChild(span);
+    cardPublisher.appendChild(p);
 
-    console.log('author', cardAuthor);
-    return cardAuthor;
+    console.log('publisher', cardPublisher);
+    return cardPublisher;
 }
 
 // create author, publisher, genre
@@ -150,7 +150,6 @@ const createReveal = (book) => {
 
     cardReveal.appendChild(sumHeader);
     cardReveal.appendChild(span);
-
     cardReveal.appendChild(p);
 
 
@@ -171,13 +170,14 @@ const createCard = (book) => {
     const cardContent = createContent(book);
     const cardAuthor = createAuthor(book);
     const cardReveal = createReveal(book);
-
+    const cardPublisher = createPublisher(book);
 
     //put the stuff on the card
 
     card.appendChild(cardImage);
     card.appendChild(cardContent);
     card.appendChild(cardAuthor);
+    card.appendChild(cardPublisher);
     card.appendChild(cardReveal);
     return card
 }
