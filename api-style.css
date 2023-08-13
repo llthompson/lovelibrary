@@ -26,6 +26,7 @@ h2 {
 .summaryP {
     padding: 0;
     text-align: left;
+    height: fit-content;
 }
 .card {
     width: 75%;
@@ -69,11 +70,24 @@ h2 {
 }
 
 .material-icons {
-    font-size: 50px;
+    font-size: 30px;
     white-space: normal;
+    /* position: relative; */
 }
 
 .card .card-content {
     padding: 0 20px 20px 20px;
     border-radius: 0 0 2px 2px;
 }
+
+h3 {
+    font-size: 24px;
+    padding: 0;
+}
+
+/* .card .card-reveal {
+    padding: 5px 5px;
+    border-radius: 0 0 2px 2px;
+    height: max-content;
+    overflow: scroll;
+} */

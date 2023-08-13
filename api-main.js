@@ -60,7 +60,7 @@ const createContent = (book) => {
     span.className = 'card-title activator grey-text text-darken-4';
     const icon = document.createElement('i')
     icon.className = 'material-icons right';
-    icon.innerText = 'expand_less';
+    icon.innerText = 'expand_more';
     span.appendChild(icon);
 
     const p = document.createElement('p');
@@ -84,19 +84,25 @@ const createReveal = (book) => {
     const cardReveal = document.createElement('div');
     cardReveal.className = 'card-reveal'
 
+    const sumHeader = document.createElement('h3');
+    sumHeader.innerText = 'Summary';
+
     const span = document.createElement('span');
     span.className = 'card-title grey-text text-darken-4';
     const icon = document.createElement('i')
     icon.className = 'material-icons right';
-    icon.innerText = 'expand_more';
+    icon.innerText = 'expand_less';
     span.appendChild(icon);
 
     const p = document.createElement('p');
     p.className = 'summaryP';
     p.innerHTML = book.volumeInfo.description;
 
+    cardReveal.appendChild(sumHeader);
     cardReveal.appendChild(span);
+
     cardReveal.appendChild(p);
+
 
     console.log('summary??', cardReveal);
     return cardReveal;
