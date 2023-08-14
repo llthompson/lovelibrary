@@ -116,7 +116,7 @@ const createPublisher = (book) => {
 
 const createToggle = (cardReveal) => {
     const icon = document.createElement('i')
-    icon.className = 'material-icons toggle-icon';
+    icon.className = 'material-icons right toggle-icon';
     icon.innerText = 'zoom_in';
     icon.addEventListener('click', () => {
         cardReveal.classList.toggle('revealed');
@@ -145,7 +145,7 @@ const createReveal = (book) => {
     // const span = document.createElement('span');
     // span.className = 'card-title grey-text text-darken-4';
     // span.appendChild(icon);
-    
+
     // const icon = document.createElement('i')
     // icon.className = 'material-icons right';
     // icon.innerText = 'expand_less';
@@ -180,12 +180,19 @@ const createCard = (book) => {
     const cardReveal = createReveal(book);
     const cardToggle = createToggle(cardReveal);
 
+    //container
+    const cardContentContainer = document.createElement('div');
+    cardContentContainer.className = 'card-content-container';
+    cardContentContainer.appendChild(cardContent);
+    cardContentContainer.appendChild(cardAuthor);
+    cardContentContainer.appendChild(cardPublisher);
 
     //put the stuff on the card
     card.appendChild(cardImage);
-    card.appendChild(cardContent);
-    card.appendChild(cardAuthor);
-    card.appendChild(cardPublisher);
+    // card.appendChild(cardContent);
+    // card.appendChild(cardAuthor);
+    // card.appendChild(cardPublisher);
+    card.appendChild(cardContentContainer);
     card.appendChild(cardToggle);
 
     card.appendChild(cardReveal);
