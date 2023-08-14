@@ -95,7 +95,7 @@ const createPublisher = (book) => {
     span.className = 'card-title activator grey-text text-darken-4';
     // const icon = document.createElement('i')
     // icon.className = 'material-icons right';
-    // icon.innerText = 'expand_more';
+    // icon.innerText = 'zoom_out';
     // span.appendChild(icon);
 
     const p = document.createElement('p');
@@ -117,9 +117,14 @@ const createPublisher = (book) => {
 const createToggle = (cardReveal) => {
     const icon = document.createElement('i')
     icon.className = 'material-icons toggle-icon';
-    icon.innerText = 'local_library';
+    icon.innerText = 'zoom_in';
     icon.addEventListener('click', () => {
         cardReveal.classList.toggle('revealed');
+        if (cardReveal.classList.contains('revealed')) {
+            icon.innerText = 'zoom_out';
+        } else {
+            icon.innerText = 'zoom_in';
+        }
     });
     // const span = document.createElement('span');
     // span.className = 'card-title grey-text text-darken-4';
