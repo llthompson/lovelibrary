@@ -1,4 +1,6 @@
-// search book semiosis
+// search book 'semiosis'
+
+//initial setup
 
 const button = document.getElementById('btn');
 const input = document.getElementById('input');
@@ -6,12 +8,10 @@ const ul = document.getElementById('items');
 
 let arrayOfBooks = [];
 
-
 button.addEventListener('click', async () => {
     let search = input.value;
     await fetchBooks(search);
 })
-
 
 async function fetchBooks(search) {
     const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${search}&key=${apiKey}`);
@@ -27,12 +27,13 @@ const displayBooks = () => {
         const li = document.createElement('li');
         li.className = 'bookItem';
         li.textContent = `Title: ${book.volumeInfo.title} Author: ${book.volumeInfo.authors}`;
-        // console.log(book.volumeInfo);
         const card = createCard(book);
         ul.appendChild(card);
     });
 
 }
+
+//creating card details
 
 const createImage = (book) => {
     const cardImage = document.createElement('div');
@@ -93,10 +94,6 @@ const createPublisher = (book) => {
 
     const span = document.createElement('span');
     span.className = 'card-title activator grey-text text-darken-4';
-    // const icon = document.createElement('i')
-    // icon.className = 'material-icons right';
-    // icon.innerText = 'zoom_out';
-    // span.appendChild(icon);
 
     const p = document.createElement('p');
     p.className = 'publisherP'
@@ -112,7 +109,7 @@ const createPublisher = (book) => {
     return cardPublisher;
 }
 
-// create author, publisher, genre
+//toggle book summary
 
 const createToggle = (cardReveal) => {
     const icon = document.createElement('i')
@@ -126,9 +123,6 @@ const createToggle = (cardReveal) => {
             icon.innerText = 'zoom_in';
         }
     });
-    // const span = document.createElement('span');
-    // span.className = 'card-title grey-text text-darken-4';
-    // span.appendChild(icon);
     return icon;
 }
 
@@ -139,31 +133,18 @@ const createReveal = (book) => {
     const sumHeader = document.createElement('h3');
     sumHeader.innerText = 'Summary';
 
-    // const icon = document.createElement('i')
-    // icon.className = 'material-icons center';
-    // icon.innerText = 'ac_unit';
-    // const span = document.createElement('span');
-    // span.className = 'card-title grey-text text-darken-4';
-    // span.appendChild(icon);
-
-    // const icon = document.createElement('i')
-    // icon.className = 'material-icons right';
-    // icon.innerText = 'expand_less';
-    // span.appendChild(icon);
-
     const p = document.createElement('p');
     p.className = 'summaryP';
     p.innerHTML = book.volumeInfo.description;
 
     cardReveal.appendChild(sumHeader);
     cardReveal.appendChild(p);
-    // cardReveal.appendChild(span);
-
-
 
     console.log('summary??', cardReveal);
     return cardReveal;
 }
+
+//displaying results
 
 const createCard = (book) => {
 
@@ -189,9 +170,6 @@ const createCard = (book) => {
 
     //put the stuff on the card
     card.appendChild(cardImage);
-    // card.appendChild(cardContent);
-    // card.appendChild(cardAuthor);
-    // card.appendChild(cardPublisher);
     card.appendChild(cardContentContainer);
     card.appendChild(cardToggle);
 
@@ -201,5 +179,3 @@ const createCard = (book) => {
     //finish
     return card
 }
-
-// console.log(fetchBooks)
