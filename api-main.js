@@ -1,4 +1,4 @@
-// search book 'semiosis'
+// search book example 'semiosis'
 
 //initial setup
 
@@ -38,7 +38,7 @@ const displayBooks = () => {
 const createImage = (book) => {
     const cardImage = document.createElement('div');
     const img = document.createElement('img');
-    img.className = 'activator';
+    img.className = 'img-activator';
     img.src = book.volumeInfo.imageLinks.thumbnail;
 
     cardImage.appendChild(img);
