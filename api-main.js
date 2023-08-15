@@ -8,6 +8,14 @@ const ul = document.getElementById('items');
 
 let arrayOfBooks = [];
 
+input.addEventListener('keydown', async (event) => {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        const search = input.value;
+        await fetchBooks(search);
+    }
+});
+
 button.addEventListener('click', async () => {
     let search = input.value;
     await fetchBooks(search);
