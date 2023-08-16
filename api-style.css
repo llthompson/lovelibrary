@@ -74,15 +74,13 @@ h2 {
     background-color: #ffffff;
     box-shadow: 3px 3px 5px #00000033;
     border-radius: 6px;
-    text-align: center;
 }
 
 input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
     font-size: 32px;
     color: #0b0b0bd5;
     font-family: 'Quicksand', sans-serif;
-    text-align: center;
-
+    padding-left: 20px;
 }
 
 input:not([type]):focus:not([readonly]),input[type=text]:not(.browser-default):focus:not([readonly]),input[type=password]:not(.browser-default):focus:not([readonly]),input[type=email]:not(.browser-default):focus:not([readonly]),input[type=url]:not(.browser-default):focus:not([readonly]),input[type=time]:not(.browser-default):focus:not([readonly]),input[type=date]:not(.browser-default):focus:not([readonly]),input[type=datetime]:not(.browser-default):focus:not([readonly]),input[type=datetime-local]:not(.browser-default):focus:not([readonly]),input[type=tel]:not(.browser-default):focus:not([readonly]),input[type=number]:not(.browser-default):focus:not([readonly]),input[type=search]:not(.browser-default):focus:not([readonly]),textarea.materialize-textarea:focus:not([readonly]) {
@@ -105,7 +103,8 @@ button {
     border-radius: 7px;
     border-width: 2px;
     padding: 8px;
-    margin-left: 5px;
+    margin-top: 5px;
+    margin-left: 15px;
     box-shadow: 3px 3px 5px #00000033;
 }
 
