@@ -25,7 +25,7 @@ async function fetchBooks(search) {
     const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${search}&key=${apiKey}`);
     const data = await response.json();
     arrayOfBooks = data.items;
-    console.log(arrayOfBooks);
+    console.log('an array of books', arrayOfBooks);
     displayBooks();
 }
 
@@ -38,7 +38,6 @@ const displayBooks = () => {
         const card = createCard(book);
         ul.appendChild(card);
     });
-
 }
 
 //creating card details
@@ -70,8 +69,7 @@ const createContent = (book) => {
 
     cardContent.appendChild(span);
     cardContent.appendChild(p);
-
-    console.log('a title and link', cardContent);
+    // console.log('a title and link', cardContent);
     return cardContent;
 }
 
@@ -91,8 +89,7 @@ const createAuthor = (book) => {
 
     cardAuthor.appendChild(span);
     cardAuthor.appendChild(p);
-
-    console.log('author', cardAuthor);
+    // console.log('author', cardAuthor);
     return cardAuthor;
 }
 
@@ -112,8 +109,7 @@ const createPublisher = (book) => {
 
     cardPublisher.appendChild(span);
     cardPublisher.appendChild(p);
-
-    console.log('publisher', cardPublisher);
+    // console.log('publisher', cardPublisher);
     return cardPublisher;
 }
 
@@ -147,8 +143,7 @@ const createReveal = (book) => {
 
     cardReveal.appendChild(sumHeader);
     cardReveal.appendChild(p);
-
-    console.log('summary??', cardReveal);
+    // console.log('summary??', cardReveal);
     return cardReveal;
 }
 
